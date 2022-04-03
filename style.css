@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather&display=swap');
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons-round {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  
+  border: 1px solid blue;
+}
+
+:root {
+  /*Color Palette*/
+  
+  /*Orange Values*/
+  --antique-brass: #CB977C;
+  /*Antique Brass #CB977C, rgb(203,151,124), hsl(21,43,64) - peru*/
+  --desert-sand: #E2C5B6;
+  /*Desert Sand - #E2C5B6, rgb(226,197,182), hsl(20,43,80) - wheat*/
+  --linen: #F3E8E2;
+  /*Linen - #F3E8E2, rgb(243,232,226), hsl(21,41,92) - linen*/
+  
+  /*Green Values*/
+  --xanadu: #767B65;
+  /*Xanadu - #767B65, rgb(118,123,101), hsl(74,10,44) - darkolivegreen*/
+  --ash-gray: #A8AC9A
+  /*Ash Gray - #A8AC9A, rgb(168,172,154), hsl(73,10,64) - darkseagreen*/
+  --timberwolf: #D9DAD2;
+  /*Timberwolf - #D9DAD2, rgb(217,218,210), hsl(67,10,84) - honeydew*/
+  
+  /*Complimentary Value*/
+  --french-blue: #2E72B2;
+  /*French Blue - #2E72B2, rgb(46,114,178), hsl(209,59,44) - cornflower blue*/
+  
+  /*Fonts*/
+  --primary-font: 'Merriweather', serif;
+  --secondary-font: 'Fira Sans', sans-serif;
+  
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+  min-height: 100vh;
+	line-height: 1.5;
+  background-color: var(--linen, linen);
+  font-family: var(--primary-font, Georgia, system-ui, serif);
+  
+  display: grid;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.17rem; }
+h4 { font-size: 1.00rem; }
+h5 { font-size: 0.83rem; }
+h6 { font-size: 0.67rem; }
+
+h1 { margin: 0.67em 0; }
+
+ol, ul {
+	list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.page-header {
+    display: grid;
+}
+
+.page-aside {
+    display: grid;
+}
+
+.page-main {
+    display: grid;
+}
