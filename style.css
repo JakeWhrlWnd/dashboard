@@ -45,7 +45,7 @@
 	font: inherit;
 	vertical-align: baseline;
   
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 :root {
@@ -74,7 +74,6 @@
   /*Fonts*/
   --primary-font: 'Merriweather', serif;
   --secondary-font: 'Fira Sans', sans-serif;
-  
 }
 
 article, aside, details, figcaption, figure, 
@@ -89,6 +88,8 @@ body {
   font-family: var(--primary-font, Georgia, system-ui, serif);
   
   display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 h1 { font-size: 2rem; }
@@ -111,13 +112,41 @@ picture {
 }
 
 .page-header {
+    background-color: #fff;
+    color: var(--xanadu, darkolivegreen);
+
+    grid-area: 1 / 2 / 2 / 3;
+
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
 }
 
-.page-aside {
-    display: grid;
+.search-container {
+  grid-area: 1 / 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.page-main {
-    display: grid;
+.profile-container {
+  grid-area: 1 / 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  grid-area: 2 / 1;
+
+  display: flex;
+}
+
+.button-container {
+  grid-area: 2 / 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
