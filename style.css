@@ -111,138 +111,33 @@ picture {
 }
 
 .page-header {
-    background-color: #fff;
-    color: var(--xanadu, darkolivegreen);
+  grid-area: 1 / 2 / 1 / 3;
 
-    grid-area: 1 / 2 / 2 / -1;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
 }
 
 .search-container {
-  padding: .5em .75em;
-  grid-area: 1 / 1;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 1em;
-}
-
-.search-container span {
-  cursor: pointer;
-
-  font-weight: 700;
-}
-
-.search-container input {
-  background-color: var(--linen, linen);
-
-  width: min(80%, 400px);
-  border-radius: 10px;
 }
 
 .profile-container {
-  padding: .5em .75em;
-  grid-area: 1 / 2;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 3em;
-
-  font-size: 1rem;
-}
-
-.profile-container span {
-  cursor: pointer;
-
-  font-weight: 700;
-}
-
-.small-picture {
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-
-  outline: 2px solid var(--french-blue, cornflowerblue);
-
-  background-image: url(imgs/leilani-angel-K84vnnzxmTQ-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .welcome-container {
-  padding: .5em .75em;
-  grid-area: 2 / 1;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 1em;
-
-  font-size: 1.5rem;
 }
 
-.large-picture {
-  width: 7em;
-  height: 7em;
-  border-radius: 50%;
-
-  outline: 3px solid var(--french-blue, cornflowerblue);
-
-  background-image: url(imgs/leilani-angel-K84vnnzxmTQ-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.username {
-  font-weight: 700;
-  font-style: oblique;
-  color: var(--french-blue, cornflowerblue);
-}
 .button-container {
-  padding: .5em .75em;
-  grid-area: 2 / 2;
-
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  gap: 1em;
-}
-
-.btn {
-  border: none;
-  appearance: none;
-  
-  background-color: var(--antique-brass, peru);
-  color: #fff;
-  
-  cursor: pointer;
-  padding: 0.75em 2.3em;
-
-  border-radius: 3em;
-
-  font-family: var(--secondary-font, Arial, Helvetica, system-ui, sans-serif);
-  font-size: 1em;
-  font-weight: 700;
-
 }
 
 .page-aside {
-  background-color: var(--antique-brass, peru);
   grid-area: 1 / 1 / 3 / 1;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
 }
 
 .page-main {
@@ -250,4 +145,33 @@ picture {
 
   display: grid;
   grid-template-columns: 2fr 1fr;
+}
+
+.projects-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-footer {
+  display: flex;
+}
+
+.main-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.announcements-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-main {
+  display: flex;
+  flex-direction: column;
 }

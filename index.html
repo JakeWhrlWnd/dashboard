@@ -14,9 +14,8 @@
         
         <!-- search -->
         <div id="search-container" class="search-container">
-            <label for="search">
-              <span class="material-icons-round">search</span>
-            </label>
+            <label for="search" hidden>Search</label>
+            <span class="material-icons-round">search</span>
             <input id="search" name="search" type="text">
         </div>
         
@@ -51,67 +50,65 @@
       </header>
       
       <aside id="page-aside" class="page-aside">
-        <header>    
-          <span class="material-icons-round">token</span>
-          <h2>Dashboard</h2>
+        <header id="aside-header" class="aside-header">    
+          <h2><span class="material-icons-round">token</span> Dashboard</h2>
         </header>
         <!-- main navigation -->
-        <nav>
-          <ul>
+          <ul id="aside-nav" class="aside-nav">
             <li>
-              <a href="#">
+              <a class="nav-link" href="#">
                 <span class="material-icons-round">home</span>
                 Home
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="nav-link" href="#">
                 <span class="material-icons-round">person</span>
                 Profile
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="nav-link" href="#">
                 <span class="material-icons-round">mode_comment</span>
                 Messages
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="nav-link" href="#">
                 <span class="material-icons-round">history</span>
                 History
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="nav-link" href="#">
                 <span class="material-icons-round">task_alt</span>
                 Tasks
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="nav-link" href="#">
                 <span class="material-icons-round">groups</span>
                 Communities
               </a>
             </li>
           </ul>
-        </nav>
+
         <!-- Secondary Links -->
-        <ul>
+        <ul id="aside-links" class="aside-links">
           <li>
-            <a href="#">
+            <a class="other-links" href="#">
               <span class="material-icons-round">settings</span>
               Settings
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="other-links" href="#">
               <span class="material-icons-round">help</span>
               Support
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="other-links" href="#">
               <span class="material-icons-round">verified_user</span>
               Privacy
             </a>
@@ -121,15 +118,40 @@
       
       <main id="page-main" class="page-main">
         <!-- Your Projects -->
-        <div>
-          <h2>Your Projects</h2>
-          <article id="project-one" class="project-card">
-            <header>       
-              <h3>Project One</h3>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
-            <footer>       
-              <ul>
+        <div id="projects" class="projects-container">
+          <header id="projects-header" class="projects-header">
+            <h2 class="projects-heading">Your Projects</h2>
+          </header>
+          <main id="projects-main" class="projects-main">
+            <article id="project-one" class="project-card">
+              <header id="project-one-header" class="project-header">       
+                <h3 class="project-heading">Project One</h3>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>       
+                <ul class="project-footer">
+                  <li>
+                    <a href="#">       
+                      <span class="material-icons-round">bookmark_added</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                       <span class="material-icons-round">visibility</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="material-icons-round">share</s>
+                    </a>
+                  </li>
+                </ul>
+            </article>
+            <article id="project-two" class="project-card">
+              <header id="project-two-header" class="project-header">        
+                <h3 class="project-heading">Project Two</h3>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>      
+                <ul class="project-footer">
                 <li>
                   <a href="#">       
                     <span class="material-icons-round">bookmark_added</span>
@@ -146,191 +168,181 @@
                   </a>
                 </li>
               </ul>
-            </footer>
-          </article>
-          <article id="project-two" class="project-card">
-            <header>        
-              <h3>Project Two</h3>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
-            <footer>        
-              <ul>
-              <li>
-                <a href="#">       
-                  <span class="material-icons-round">bookmark_added</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                   <span class="material-icons-round">visibility</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="material-icons-round">share</s>
-                </a>
-              </li>
-            </ul>
-            </footer>
-          </article>
-          <article id="project-three" class="project-card">
-            <header>        
-              <h3>Project Three</h3>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
-            <footer>        
-                  <ul>
-              <li>
-                <a href="#">       
-                  <span class="material-icons-round">bookmark_added</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                   <span class="material-icons-round">visibility</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="material-icons-round">share</s>
-                </a>
-              </li>
-            </ul>
-            </footer>
-          </article>
-          <article id="project-four" class="project-card">
-            <header>        
-              <h3>Project Four</h3>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
-            <footer>        
-                  <ul>
-              <li>
-                <a href="#">       
-                  <span class="material-icons-round">bookmark_added</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                   <span class="material-icons-round">visibility</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="material-icons-round">share</s>
-                </a>
-              </li>
-            </ul>
-            </footer>
-          </article>
-          <article id="project-five" class="project-card">
-            <header>        
-              <h3>Project Five</h3>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
-            <footer>        
-                  <ul>
-              <li>
-                <a href="#">       
-                  <span class="material-icons-round">bookmark_added</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                   <span class="material-icons-round">visibility</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="material-icons-round">share</s>
-                </a>
-              </li>
-            </ul>
-            </footer>
-          </article>
-          <article id="project-six" class="project-card">
-            <header>       
-              <h3>Project Six</h3>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
-            <footer>        
-                  <ul>
-              <li>
-                <a href="#">       
-                  <span class="material-icons-round">bookmark_added</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                   <span class="material-icons-round">visibility</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="material-icons-round">share</s>
-                </a>
-              </li>
-            </ul>
-            </footer>
-          </article>
+            </article>
+            <article id="project-three" class="project-card">
+              <header id="project-three-header" class="project-header">        
+                <h3 class="project-heading">Project Three</h3>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>       
+                    <ul class="project-footer">
+                <li>
+                  <a href="#">       
+                    <span class="material-icons-round">bookmark_added</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                     <span class="material-icons-round">visibility</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="material-icons-round">share</s>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article id="project-four" class="project-card">
+              <header id="project-four-header" class="project-header">        
+                <h3 class="project-heading">Project Four</h3>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>      
+                    <ul class="project-footer">
+                <li>
+                  <a href="#">       
+                    <span class="material-icons-round">bookmark_added</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                     <span class="material-icons-round">visibility</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="material-icons-round">share</s>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article id="project-five" class="project-card">
+              <header id="project-five-header" class="project-header">        
+                <h3 class="project-heading">Project Five</h3>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
+                <ul class="project-footer">
+                  <li>
+                    <a href="#">       
+                      <span class="material-icons-round">bookmark_added</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="material-icons-round">visibility</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="material-icons-round">share</s>
+                    </a>
+                  </li>
+                </ul>
+            </article>
+            <article id="project-six" class="project-card">
+              <header id="project-six-header" class="project-header">       
+                <h3 class="project-heading">Project Six</h3>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
+              <ul class="project-footer">
+                <li>
+                  <a href="#">       
+                    <span class="material-icons-round">bookmark_added</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="material-icons-round">visibility</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="material-icons-round">share</s>
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </main>
         </div>
-        <!-- Announcements -->
-        <div>
-          <h2>Announcements</h2>
-          <article>
-            <section>
-              <header>          
-                <h3>Site Maintenance</h>
-              </header>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus perspiciatis, dolorum voluptatum iusto necessitatibus! Quasi fugit et provident quia delectus recusandae quibusdam, nobis ratione odio maxime, accusantium, pariatur autem?</p>
-            </section>
-            <section>
-              <header>          
-                <h3>Community Share Day</h>
-              </header>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus perspiciatis, dolorum voluptatum iusto necessitatibus! Quasi fugit et provident quia delectus recusandae quibusdam, nobis ratione odio maxime, accusantium, pariatur autem?</p>
-            </section>
-            <section>
-              <header>          
-                <h3>Updated Privacy Policy</h>
-              </header>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus perspiciatis, dolorum voluptatum iusto necessitatibus! Quasi fugit et provident quia delectus recusandae quibusdam, nobis ratione odio maxime, accusantium, pariatur autem?</p>
-            </section>
-          </article>
-        </div>
-        <!-- Trending -->
-        <div>
-          <h2>Trending</h2>
-          <div>      
-            <img src="imgs/charlesdeluvio-kVg2DQTAK7c-unsplash.jpg" alt="Small user avatar image">
-            <p>User Name #1</p>
-            <p>Catchphrase #1</p>
-            <!-- Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-           -->
+
+        <div class="main-sidebar" class="main-sidebar">
+
+          <!-- Announcements -->
+          <div id="announcements" class="announcements-container">
+            <header id="announcements-header" class="announcements-header">
+              <h2 class="announcements-heading">Announcements</h2>
+            </header>
+            <main id="announcements-main" class="announcements-main">
+              <div class="announcement">
+                <header class="announcements-header">          
+                  <h3 class="announcement-heading">Site Maintenance</h>
+                </header>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus perspiciatis, dolorum voluptatum iusto necessitatibus! Quasi fugit et provident quia delectus recusandae quibusdam, nobis ratione odio maxime, accusantium, pariatur autem?</p>
+              </div>
+              <div class="announcement">
+                <header class="announcements-header">          
+                  <h3 class="announcement-heading">Community Share Day</h>
+                </header>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus perspiciatis, dolorum voluptatum iusto necessitatibus! Quasi fugit et provident quia delectus recusandae quibusdam, nobis ratione odio maxime, accusantium, pariatur autem?</p>
+              </div>
+              <div class="announcement">
+                <header class="announcements-header">          
+                  <h3 class="announcement-heading">Updated Privacy Policy</h>
+                </header>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus perspiciatis, dolorum voluptatum iusto necessitatibus! Quasi fugit et provident quia delectus recusandae quibusdam, nobis ratione odio maxime, accusantium, pariatur autem?</p>
+              </div>
+            </main>
           </div>
-          
-          <div>      
-            <img src="imgs/leilani-angel-K84vnnzxmTQ-unsplash.jpg" alt="Small user avatar image">
-            <p>User Name #2</p>
-            <p>Catchphrase #2</p>
-            <!-- Photo by <a href="https://unsplash.com/@leilaniangel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leilani Angel</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-           -->
-          </div>
-          
-          <div>
-            <img src="imgs/jake-nackos-IF9TK5Uy-KI-unsplash.jpg" alt="Small user avatar image">
-            <p>User Name #3</p>
-            <p>Catchphrase #3</p>
-            <!-- Photo by <a href="https://unsplash.com/@jakenackos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jake Nackos</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-           -->      
-          </div>
-          
-          <div>      
-            <img src="imgs/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Small user avatar image">
-            <p>User Name #4</p>
-            <p>Catchphrase #4</p>
-            <!-- Photo by <a href="https://unsplash.com/@michaeldam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Dam</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-           -->
+
+          <!-- Trending -->
+          <div id="trending" class="trending-container">
+            <header id="trending-header" class="trending-header">
+              <h2 class="trending-heading">Trending</h2>
+            </header>
+            <main id="trending-main" class="trending-main">
+              <div class="trending-post">
+                <div id="picture" class="medium-picture"></div>   
+                <!-- <img src="imgs/charlesdeluvio-kVg2DQTAK7c-unsplash.jpg" alt="Small user avatar image"> -->
+                <div>
+                  <p>User Name #1</p>
+                  <p>Catchphrase #1</p>
+                </div>
+                <!-- Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+               -->
+              </div>
+              
+              <div class="trending-post">
+                <div id="picture" class="medium-picture"></div>      
+                <!-- <img src="imgs/leilani-angel-K84vnnzxmTQ-unsplash.jpg" alt="Small user avatar image"> -->
+                <div>
+                  <p>User Name #2</p>
+                  <p>Catchphrase #2</p>
+                </div>
+                <!-- Photo by <a href="https://unsplash.com/@leilaniangel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leilani Angel</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+               -->
+              </div>
+              
+              <div class="trending-post">
+                <div id="picture" class="medium-picture"></div>
+                <!-- <img src="imgs/jake-nackos-IF9TK5Uy-KI-unsplash.jpg" alt="Small user avatar image"> -->
+                <div>
+                  <p>User Name #3</p>
+                  <p>Catchphrase #3</p>
+                </div>
+                <!-- Photo by <a href="https://unsplash.com/@jakenackos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jake Nackos</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+               -->      
+              </div>
+              
+              <div class="trending-post">
+                <div id="picture" class="medium-picture"></div>      
+                <!-- <img src="imgs/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Small user avatar image"> -->
+                <div>
+                  <p>User Name #4</p>
+                  <p>Catchphrase #4</p>
+                </div>
+                <!-- Photo by <a href="https://unsplash.com/@michaeldam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Dam</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+               -->
+              </div>
+            </main>
           </div>
         </div>
       </main>
