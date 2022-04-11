@@ -45,7 +45,7 @@
 	font: inherit;
 	vertical-align: baseline;
   
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 
 :root {
@@ -160,6 +160,7 @@ picture {
 }
 
 .welcome-container {
+  padding: .5em 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,6 +179,7 @@ picture {
 }
 
 .button-container {
+  padding: .5em 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,7 +217,7 @@ picture {
 
 .aside-header {
   margin-top: .5em;
-  padding:.25em 0 .25em 2em;
+  padding:.1em 0 .1em 2em;
   display: flex;
   align-items: center;
   gap: .5em;
@@ -321,15 +323,24 @@ picture {
 }
 
 .trending-main {
-  background-color: #FFF;
+  padding: .5em;
+
   color: var(--xanadu, darkolivegreen);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.trending-post {
+.trending-posts {
+  background-color: #FFF;
+  border-radius: 1em;
+  padding: 1.75em;
+  
   display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.post-container {
+  display: flex;
+  gap: 1em;
 }
 
 .medium-picture {
