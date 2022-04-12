@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="page-container" class="page-container">
     <header id="page-header" class="page-header">
         
         <!-- search -->
         <div id="search-container" class="search-container">
-            <label for="search">
-              <span class="material-icons-round">search</span>
-            </label>            
+            <div class="material-icons-round">search</div> 
+            <label for="search" hidden></label>         
             <input id="search" name="search" type="text">
         </div>
         
         <!-- profile -->
         <div id="profile-container" class="profile-container">
-            <span class="material-icons-round">notifications_active</span>
+          <div class="material-icons-round alarm">notifications_active</div>
           <!--Small Avatar Image-->
           <div id="picture" class="small-picture"></div>
           <!-- Photo by <a href="https://unsplash.com/@leilaniangel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leilani Angel</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -53,33 +53,33 @@
       <aside id="page-aside" class="page-aside">
         
         <header id="aside-header" class="aside-header">
-          <span class="material-icons-round">token</span>    
+          <div class="material-icons-round">token</div>    
           <h1>Dashboard</h1>
         </header>
         <!-- main navigation -->
           <ul id="aside-nav" class="aside-nav">
             <li>
-              <span class="material-icons-round">home</span>
+              <div class="material-icons-round">home</div>
               <a class="nav-link" href="#">Home</a>
             </li>
             <li>
-              <span class="material-icons-round">person</span>
+              <div class="material-icons-round">person</div>
               <a class="nav-link" href="#">Profile</a>
             </li>
             <li>
-              <span class="material-icons-round">mode_comment</span>
+              <div class="material-icons-round">mode_comment</div>
               <a class="nav-link" href="#">Messages</a>
             </li>
             <li>
-              <span class="material-icons-round">history</span>
+              <div class="material-icons-round">history</div>
               <a class="nav-link" href="#">History</a>
             </li>
             <li>
-              <span class="material-icons-round">task_alt</span>
+              <div class="material-icons-round">task_alt</div>
               <a class="nav-link" href="#">Tasks</a>
             </li>
             <li>
-              <span class="material-icons-round">groups</span>
+              <div class="material-icons-round">groups</div>
               <a class="nav-link" href="#">Communities</a>
             </li>
           </ul>
@@ -87,15 +87,15 @@
         <!-- Secondary Links -->
         <ul id="aside-links" class="aside-links">
           <li>
-            <span class="material-icons-round">settings</span>
+            <div class="material-icons-round">settings</div>
             <a class="other-links" href="#">Settings</a>
           </li>
           <li>
-            <span class="material-icons-round">help</span>
+            <div class="material-icons-round">help</div>
             <a class="other-links" href="#">Support</a>
           </li>
           <li>
-            <span class="material-icons-round">verified_user</span>
+            <div class="material-icons-round">verified_user</div>
             <a class="other-links" href="#">Privacy</a>
           </li>
         </ul>
@@ -115,13 +115,13 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>       
               <ul class="project-footer">
                 <li class="project-button">     
-                    <span class="material-icons-round">bookmark_added</span>
+                    <div class="material-icons-round">bookmark_added</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">visibility</span>
+                    <div class="material-icons-round">visibility</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">share</s>
+                    <div class="material-icons-round">share</s>
                 </li>
               </ul>
             </article>
@@ -132,13 +132,13 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>      
               <ul class="project-footer">
                 <li class="project-button">     
-                    <span class="material-icons-round">bookmark_added</span>
+                    <div class="material-icons-round">bookmark_added</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">visibility</span>
+                    <div class="material-icons-round">visibility</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">share</s>
+                    <div class="material-icons-round">share</s>
                 </li>
               </ul>
             </article>
@@ -149,13 +149,13 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>       
               <ul class="project-footer">
                 <li class="project-button">     
-                    <span class="material-icons-round">bookmark_added</span>
+                    <div class="material-icons-round">bookmark_added</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">visibility</span>
+                    <div class="material-icons-round">visibility</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">share</s>
+                    <div class="material-icons-round">share</s>
                 </li>
               </ul>
             </article>
@@ -166,13 +166,13 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>      
               <ul class="project-footer">
                 <li class="project-button">     
-                    <span class="material-icons-round">bookmark_added</span>
+                    <div class="material-icons-round">bookmark_added</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">visibility</span>
+                    <div class="material-icons-round">visibility</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">share</s>
+                    <div class="material-icons-round">share</s>
                 </li>
               </ul>
             </article>
@@ -183,13 +183,13 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
               <ul class="project-footer">
                 <li class="project-button">     
-                    <span class="material-icons-round">bookmark_added</span>
+                    <div class="material-icons-round">bookmark_added</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">visibility</span>
+                    <div class="material-icons-round">visibility</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">share</s>
+                    <div class="material-icons-round">share</s>
                 </li>
               </ul>
             </article>
@@ -200,18 +200,20 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt facilis dolorem? Quaerat esse necessitatibus tempore, delectus sit expedita molestiae! Magnam ab eius dolore iste praesentium sit sint ullam labore!</p>
               <ul class="project-footer">
                 <li class="project-button">     
-                    <span class="material-icons-round">bookmark_added</span>
+                    <div class="material-icons-round">bookmark_added</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">visibility</span>
+                    <div class="material-icons-round">visibility</div>
                 </li>
                 <li class="project-button">
-                    <span class="material-icons-round">share</s>
+                    <div class="material-icons-round">share</s>
                 </li>
               </ul>
             </article>
           </main>
         </div>
+
+        <div id="main-sidebar" class="main-sidebar">
 
           <!-- Announcements -->
           <div id="announcements" class="announcements-container">
@@ -261,14 +263,14 @@
                 </div>
 
                 <div class="post-container">                  
-                                  <div id="picture-two" class="medium-picture picture-two"></div>      
-                                  <!-- <img src="imgs/leilani-angel-K84vnnzxmTQ-unsplash.jpg" alt="Small user avatar image"> -->
-                                  <div>
-                                    <p>Abby Adams</p>
-                                    <p>Create tomorrow!</p>
-                                  </div>
-                                  <!-- Photo by <a href="https://unsplash.com/@leilaniangel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leilani Angel</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                                 -->
+                  <div id="picture-two" class="medium-picture picture-two"></div>      
+                  <!-- <img src="imgs/leilani-angel-K84vnnzxmTQ-unsplash.jpg" alt="Small user avatar image"> -->
+                  <div>
+                      <p>Abby Adams</p>
+                      <p>Create tomorrow!</p>
+                  </div>
+                  <!-- Photo by <a href="https://unsplash.com/@leilaniangel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leilani Angel</a> on <a href="https://unsplash.com/s/photos/avatar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                  -->
                 </div>
 
                 <div class="post-container">
@@ -297,6 +299,8 @@
               </div>
             </main>
           </div>
+        </div>
       </main>
+  </div>
 </body>
 </html>
